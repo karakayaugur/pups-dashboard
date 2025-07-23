@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "richard-app": {
+    "pups-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -21,9 +21,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ]
+            "styles": ["src/styles.css"]
           },
           "configurations": {
             "production": {
@@ -53,10 +51,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "richard-app:build:production"
+              "buildTarget": "pups-app:build:production"
             },
             "development": {
-              "buildTarget": "richard-app:build:development"
+              "buildTarget": "pups-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,12 +72,13 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ]
+            "styles": ["src/styles.css"]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
