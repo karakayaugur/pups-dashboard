@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("assets/styles/props.colors.css");
+@import url("assets/styles/reset.css");
+@import url("assets/styles/typography.css");
+
+@layer root ,base;
+
+@layer base {
+  :root {
+    /*Surface Color */
+    --clr-surface-dark-300: hsl(0, 0%, 24%);
+    --clr-surface-dark-400: hsl(0, 0%, 20%);
+    --clr-surface-dark-500: hsl(0, 0%, 17%);
+    --clr-surface-dark-600: hsl(0, 0%, 12%);
+
+    --clr-surface-light-300: hsl(0 0% 88%);
+    --clr-surface-light-400: hsl(0 0% 92%);
+    --clr-surface-light-500: hsl(0 0% 96%);
+    --clr-surface-light-600: hsl(0 0% 100%);
+
+    --fs-base: 1rem;
+    --font-weight: 400;
+    --font-face: "Inter", sans-serif;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src: url("/assets/fonts/Inter/Inter-VariableFont_wght.ttf")
+      format("truetype-variations");
+    font-style: normal;
+    font-weight: 100 900;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src: url("/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+      format("truetype-variations");
+    font-style: normal;
+    font-weight: 100 900;
+  }
+}
+
+/* Theme */
+html {
+  --surface-1-dark: var(--clr-surface-dark-600);
+  --surface-2-dark: var(--clr-surface-dark-500);
+  --surface-3-dark: var(--clr-surface-dark-400);
+  --surface-4-dark: var(--clr-surface-dark-300);
+
+  --surface-1-light: var(--clr-surface-light-600);
+  --surface-2-light: var(--clr-surface-light-500);
+  --surface-3-light: var(--clr-surface-light-400);
+  --surface-4-light: var(--clr-surface-light-300);
+}
+
+[color-scheme="light"] {
+  color-scheme: light;
+  --surface-1: var(--surface-1-light);
+  --surface-2: var(--surface-2-light);
+  --surface-3: var(--surface-3-light);
+  --surface-4: var(--surface-4-light);
+}
+
+[color-scheme="dark"] {
+  color-scheme: dark;
+  --surface-1: var(--surface-1-dark);
+  --surface-2: var(--surface-2-dark);
+  --surface-3: var(--surface-3-dark);
+  --surface-4: var(--surface-4-dark);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  font-size: var(--fs-base);
+  font-weight: var(--font-weight);
+  font-family: var(--font-face);
+  background-color: var(--surface-1);
+  font-family: var(--font-face);
+}

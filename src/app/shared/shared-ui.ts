@@ -1,6 +1,8 @@
 // shared/components/shared-ui.ts
-import { ButtonComponent } from './components/button/button.component';
+import { ButtonComponent } from '@shared/components/button/button.component';
+import { InputComponent } from '@shared/components/input/input.component';
+import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.component';
 
-export const SharedUi = [ButtonComponent];
+export { ButtonComponent, InputComponent, ThemeToggleComponent };
 
-export { ButtonComponent };
+export const SharedUi = [ButtonComponent, InputComponent, ThemeToggleComponent];
