@@ -1,0 +1,10 @@
+.ui-feedback {
+  min-height: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 500;
+  color: var(--clr-danger-600);
+  font-size: calc(1rem * 0.675);
+  margin-top: 0.25rem;
+}

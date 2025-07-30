@@ -1,0 +1,15 @@
+<div style="max-width: 500px">
+  <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <ui-input-text
+      label="Username (Likely to be your email address)"
+      name="username"
+      formControlName="username"
+    ></ui-input-text>
+    <ui-input-text
+      label="Password"
+      name="password"
+      formControlName="password"
+      type="password"
+    ></ui-input-text>
+  </form>
+</div>
