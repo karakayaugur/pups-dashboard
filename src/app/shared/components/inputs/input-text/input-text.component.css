@@ -62,7 +62,7 @@
 }
 
 .ui-input:has(input:focus) {
-  box-shadow: var(--white) 0px 0px 0px 1px, var(--white) 0px 0px 0px 2px,
+  box-shadow: var(--clr-white) 0px 0px 0px 1px, var(--clr-white) 0px 0px 0px 2px,
     var(--clr-primary-500) 0px 0px 0px 4px;
 }
 

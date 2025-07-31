@@ -1,0 +1,58 @@
+button {
+  --padding: 0 calc(1rem * 1.5);
+  --clr-border: var(--clr-primary-400);
+  --clr-background: var(--clr-primary-400);
+  --clr-text: var(--clr-white);
+  --font-size: calc(1rem * 0.875);
+  --font-weight: 400;
+  --line-height: 1.5;
+  --height: 3rem;
+  --border-radius: var(--size-2);
+  --border-style: solid;
+  --border-width: 2px;
+  --outline: none;
+  --cursor: pointer;
+  --width: auto;
+}
+
+button {
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-text);
+  background-color: var(--clr-background);
+  border-width: var(--border-width);
+  border-radius: var(--border-radius);
+  border-style: var(--border-style);
+  border-color: var(--clr-border);
+  font-weight: var(--font-weight);
+  outline: var(--outline);
+  color: var(--clr-text);
+  cursor: var(--cursor);
+  display: inline-flex;
+  padding: var(--padding);
+  width: var(--width);
+  height: var(--height);
+  transition: all 200ms;
+}
+
+button:hover {
+  --clr-background: var(--clr-primary-500);
+  --clr-border: var(--clr-primary-500);
+  text-decoration: none;
+}
+
+button.block {
+  --width: 100%;
+}
+
+button:disabled {
+  --clr-background: var(--clr-primary-200);
+  --clr-border: var(--clr-primary-200);
+  cursor: not-allowed;
+}
+
+button.loading {
+  --clr-background: var(--clr-primary-200);
+  --clr-border: var(--clr-primary-200);
+  cursor: not-allowed;
+}
