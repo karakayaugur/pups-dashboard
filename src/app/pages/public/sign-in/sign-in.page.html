@@ -1,10 +1,8 @@
 <div style="max-width: 500px; text-align: center">
-  <img
-    src="assets/images/brand-logo.png"
-    style="width: 150px; height: 150px"
-    alt="Logo"
-    srcset=""
-  />
+  <h1>
+    {{ "Sign In to PUPS" }}
+  </h1>
+  <p style="margin-bottom: 2rem">Welcome back! Please enter your details</p>
   <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
     <ui-input-text
       label="Username (Likely to be your email address)"
@@ -17,5 +15,12 @@
       formControlName="password"
       type="password"
     ></ui-input-text>
+    <div style="margin-top: 2rem">
+      <ui-button>{{ "Sign In" }}</ui-button>
+    </div>
   </form>
+
+  <p style="margin-top: 3rem">
+    Don't have an account? <a routerLink="/public/sign-up">Sign Up</a>
+  </p>
 </div>

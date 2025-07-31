@@ -21,7 +21,7 @@ export class SignInPage {
 
   ngOnInit(): void {
     this.form = this.fb.group({
-      username: new FormControl('', [Validators.required]),
+      username: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', [Validators.required]),
     });
   }

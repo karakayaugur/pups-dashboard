@@ -24,7 +24,7 @@ html {
 
 /* Colors Palette*/
 :where(html) {
-  --white: hsl(0 0% 100%);
+  --clr-white: hsl(0 0% 100%);
   --black: hsl(0 0% 0%);
 }
 
@@ -61,9 +61,9 @@ html {
   --clr-danger-200: rgb(255, 190, 193);
   --clr-danger-300: rgb(255, 143, 148);
   --clr-danger-400: rgb(255, 91, 101);
-  --clr-danger-500: rgb(250, 19, 32); /* Ana renk */
-  --clr-danger-600: rgb(210, 16, 27);
-  --clr-danger-700: rgb(170, 13, 22);
-  --clr-danger-800: rgb(130, 10, 17);
-  --clr-danger-900: rgb(90, 7, 12);
+  --clr-danger-500: rgb(199, 54, 54);
+  --clr-danger-600: rgb(250, 19, 32);
+  --clr-danger-700: rgb(210, 16, 27);
+  --clr-danger-800: rgb(170, 13, 22);
+  --clr-danger-900: rgb(130, 10, 17);
 }

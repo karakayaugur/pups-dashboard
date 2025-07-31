@@ -7,6 +7,7 @@
   color: var(--clr-danger-500);
   font-size: calc(1rem * 0.675);
   margin-top: 0.25rem;
+  line-height: 20px;
 }
 
 :host-context([data-theme="dark"]) .ui-feedback {
