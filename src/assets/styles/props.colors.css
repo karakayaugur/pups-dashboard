@@ -57,13 +57,13 @@ html {
 }
 
 :where(html) {
-  --clr-danger-100: #ffe5e5;
-  --clr-danger-200: #ffbfbf;
-  --clr-danger-300: #ff9999;
-  --clr-danger-400: #f76868;
-  --clr-danger-500: #e03131; /* Ana renk */
-  --clr-danger-600: #c02020;
-  --clr-danger-700: #a61919;
-  --clr-danger-800: #871313;
-  --clr-danger-900: #5a0c0c;
+  --clr-danger-100: rgb(255, 246, 243);
+  --clr-danger-200: rgb(255, 190, 193);
+  --clr-danger-300: rgb(255, 143, 148);
+  --clr-danger-400: rgb(255, 91, 101);
+  --clr-danger-500: rgb(250, 19, 32); /* Ana renk */
+  --clr-danger-600: rgb(210, 16, 27);
+  --clr-danger-700: rgb(170, 13, 22);
+  --clr-danger-800: rgb(130, 10, 17);
+  --clr-danger-900: rgb(90, 7, 12);
 }

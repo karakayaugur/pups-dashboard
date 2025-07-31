@@ -4,7 +4,11 @@
   align-items: center;
   gap: 0.25rem;
   font-weight: 500;
-  color: var(--clr-danger-600);
+  color: var(--clr-danger-500);
   font-size: calc(1rem * 0.675);
   margin-top: 0.25rem;
+}
+
+:host-context([data-theme="dark"]) .ui-feedback {
+  color: var(--clr-danger-400);
 }
