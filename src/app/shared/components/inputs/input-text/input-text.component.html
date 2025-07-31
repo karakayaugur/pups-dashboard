@@ -1,0 +1,26 @@
+<div class="ui-input-group">
+  @if(label) {
+  <label [for]="ngControl.name"
+    >{{ label }}
+    @if(required) {
+    <span> *</span>
+    }
+  </label>
+  }
+
+  <div class="ui-input">
+    <input
+      [type]="type"
+      [name]="ngControl.name"
+      [value]="value"
+      (input)="updateValue($event)"
+      [placeholder]="placeholder ? placeholder : ''"
+      (blur)="onTouched()"
+      [class.invalid]="control?.invalid && (control?.dirty || control?.touched)"
+    />
+  </div>
+
+  @if(control){
+  <ui-control-feedback [control]="control"></ui-control-feedback>
+  }
+</div>

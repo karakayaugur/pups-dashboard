@@ -1,0 +1,69 @@
+:root {
+  /*Surface Color */
+
+  --clr-surface-dark-400: hsl(0, 0%, 20%);
+  --clr-surface-dark-500: hsl(0, 0%, 17%);
+  --clr-surface-dark-600: hsl(0, 0%, 12%);
+
+  --clr-surface-light-400: hsl(0 0% 92%);
+  --clr-surface-light-500: hsl(0 0% 96%);
+  --clr-surface-light-600: hsl(0 0% 100%);
+}
+
+html {
+  --clr-text-dark: var(--stone-0-hsl);
+  --surface-1-dark: var(--clr-surface-dark-600);
+  --surface-2-dark: var(--clr-surface-dark-500);
+  --surface-3-dark: var(--clr-surface-dark-400);
+
+  --clr-text-light: var(--stone-12-hsl);
+  --surface-1-light: var(--clr-surface-light-600);
+  --surface-2-light: var(--clr-surface-light-500);
+  --surface-3-light: var(--clr-surface-light-400);
+}
+
+/* Colors Palette*/
+:where(html) {
+  --white: hsl(0 0% 100%);
+  --black: hsl(0 0% 0%);
+}
+
+:where(html) {
+  --stone-0-hsl: hsl(200 27% 98%);
+  --stone-1-hsl: hsl(210 18% 96%);
+  --stone-2-hsl: hsl(210 11% 93%);
+  --stone-3-hsl: hsl(192 9% 89%);
+  --stone-4-hsl: hsl(197 8% 83%);
+  --stone-5-hsl: hsl(202 5% 71%);
+  --stone-6-hsl: hsl(200 3% 60%);
+  --stone-7-hsl: hsl(180 2% 50%);
+  --stone-8-hsl: hsl(160 1% 41%);
+  --stone-9-hsl: hsl(90 1% 31%);
+  --stone-10-hsl: hsl(60 3% 22%);
+  --stone-11-hsl: hsl(60 6% 14%);
+  --stone-12-hsl: hsl(60 6% 7%);
+}
+
+:where(html) {
+  --clr-primary-100: #e6edff;
+  --clr-primary-200: #bfd4ff;
+  --clr-primary-300: #8fb5ff;
+  --clr-primary-400: #5f96ff;
+  --clr-primary-500: #255af0;
+  --clr-primary-600: #1e4bd1;
+  --clr-primary-700: #173cb3;
+  --clr-primary-800: #112d94;
+  --clr-primary-900: #0a1e75;
+}
+
+:where(html) {
+  --clr-danger-100: rgb(255, 246, 243);
+  --clr-danger-200: rgb(255, 190, 193);
+  --clr-danger-300: rgb(255, 143, 148);
+  --clr-danger-400: rgb(255, 91, 101);
+  --clr-danger-500: rgb(250, 19, 32); /* Ana renk */
+  --clr-danger-600: rgb(210, 16, 27);
+  --clr-danger-700: rgb(170, 13, 22);
+  --clr-danger-800: rgb(130, 10, 17);
+  --clr-danger-900: rgb(90, 7, 12);
+}

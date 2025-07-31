@@ -1,1 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("assets/styles/reset.css");
+@import url("assets/styles/props.colors.css");
+@import url("assets/styles/props.sizes.css");
+/* @import url("assets/styles/fonts/remixicon.css"); */
+/*@import url("bulma/css/bulma.css");*/
+
+@import url("assets/styles/typography.css");
+
+@layer root ,base;
+
+@layer base {
+  :root {
+    --fs-base: 1rem;
+    --font-weight: 400;
+    --font-face: "Inter", sans-serif;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src: url("../src/assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf")
+      format("truetype-variations");
+    font-style: normal;
+    font-weight: 100 900;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src: url("../src/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+      format("truetype-variations");
+    font-style: normal;
+    font-weight: 100 900;
+  }
+
+  @font-face {
+    font-family: "Manrope";
+    src: url("../src/assets/fonts/Manrope/Manrope-VariableFont_wght.ttf")
+      format("truetype-variations");
+    font-style: normal;
+    font-weight: 100 900;
+  }
+
+  @font-face {
+    font-family: "Raleway";
+    src: url("../src/assets/fonts/Raleway/Raleway-VariableFont_wght.ttf")
+      format("truetype-variations");
+    font-style: normal;
+    font-weight: 100 900;
+  }
+  @font-face {
+    font-family: "Nunito";
+    src: url("../src/assets/fonts/Nunito/Nunito-VariableFont_wght.ttf")
+      format("truetype-variations");
+    font-style: normal;
+    font-weight: 100 900;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url("../src/assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf")
+      format("truetype-variations");
+    font-style: normal;
+    font-weight: 100 900;
+  }
+}
+
+/* Theme */
+
+[data-theme="light"] {
+  color-scheme: light;
+  --surface-1: var(--surface-1-light);
+  --surface-2: var(--surface-2-light);
+  --surface-3: var(--surface-3-light);
+  --surface-4: var(--surface-4-light);
+  --clr-text: var(--clr-text-light);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --surface-1: var(--surface-1-dark);
+  --surface-2: var(--surface-2-dark);
+  --surface-3: var(--surface-3-dark);
+  --surface-4: var(--surface-4-dark);
+  --clr-text: var(--clr-text-dark);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  font-size: var(--fs-base);
+  font-weight: var(--font-weight);
+  font-family: var(--font-face);
+  background-color: var(--surface-1);
+  color: var(--clr-text);
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  place-content: center;
+  min-height: 100vh;
+}
