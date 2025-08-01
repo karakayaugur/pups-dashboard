@@ -1,7 +1,7 @@
 import morgan from "morgan";
 import chalk from "chalk";
 import path from "path";
-import { fnMaskQueryParams } from "./sensetive-data.js";
+import { fnMaskQueryParams } from "./mask-content.js";
 
 const skipThis = (req, res) => {
   if (!req.originalUrl.includes("/p-api/")) {
@@ -40,7 +40,6 @@ morgan.format("format", (token, req, res) => {
     chalk.hex("#ffffff")(`🏁`),
     chalk.hex("#f40a0a")(token.method(req, res)),
     chalk.hex("#ffffff")(token.status(req, res)),
-    // chalk.hex("#1e90ff")(`Remote:${token["remote-addr"](req, res)}`),
     chalk.hex("#1e90ff")(`Url:${token.maskUrl(req, res)}`),
     chalk.hex("#2ed573")(token["response-time"](req, res) + "ms"),
     chalk.hex("#ffffff")("@" + token.date(req, res)),
