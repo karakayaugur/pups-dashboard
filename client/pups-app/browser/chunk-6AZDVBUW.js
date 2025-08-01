@@ -1,0 +1,1 @@
+import{Aa as t,Ba as n,Da as o,oa as i}from"./chunk-ZHLNYBJ7.js";var m=class a{static \u0275fac=function(e){return new(e||a)};static \u0275cmp=i({type:a,selectors:[["ng-component"]],decls:5,vars:0,template:function(e,p){e&1&&(t(0,"div")(1,"h1"),o(2,"Page Not Found"),n(),t(3,"p"),o(4,"404"),n()())},encapsulation:2})};export{m as NotFoundPage};

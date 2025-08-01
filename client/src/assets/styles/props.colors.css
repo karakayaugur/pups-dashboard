@@ -45,15 +45,15 @@ html {
 }
 
 :where(html) {
-  --clr-primary-100: #e6edff;
-  --clr-primary-200: #bfd4ff;
-  --clr-primary-300: #8fb5ff;
-  --clr-primary-400: #5f96ff;
-  --clr-primary-500: #255af0;
-  --clr-primary-600: #1e4bd1;
-  --clr-primary-700: #173cb3;
-  --clr-primary-800: #112d94;
-  --clr-primary-900: #0a1e75;
+  --clr-primary-100: #e0ecfe;
+  --clr-primary-200: #bcd4fd;
+  --clr-primary-300: #8ab4fb;
+  --clr-primary-400: #5e95f5;
+  --clr-primary-500: #1d63ed; /* Ana renk */
+  --clr-primary-600: #174fcb;
+  --clr-primary-700: #123ca3;
+  --clr-primary-800: #0d2b7a;
+  --clr-primary-900: #081a52;
 }
 
 :where(html) {
