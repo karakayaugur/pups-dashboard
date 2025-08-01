@@ -1,46 +1,35 @@
 {
-  "name": "pups-app",
-  "version": "0.0.0",
+  "name": "pups-dashboard-fe",
+  "version": "1.0.0",
+  "description": "Pups dashboard FE application",
+  "main": "index.js",
+  "author": "Ugur Cakil",
+  "homepage": "xxx",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "xxx"
+  },
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "predev": "npm i && concurrently --raw 'cd server && npm i' 'cd client && npm i'",
+    "dev": "concurrently 'nodemon' 'npm run watch'",
+    "nodemon": "nodemon",
+    "prebuild": "npm i --omit=dev && cd server && npm i --omit=dev && cd .. && cd client && npm i --omit=dev",
+    "build": "cd client && npm run build",
+    "start": "node index.js",
+    "watch": "cd client && npm run watch",
+    "debug": "node --inspect-brk index.js",
+    "clean": "rm -rf node_modules && cd client && rm -rf node_modules && cd .. && cd server && rm -rf node_modules"
   },
-  "prettier": {
-    "overrides": [
-      {
-        "files": "*.html",
-        "options": {
-          "parser": "angular"
-        }
-      }
-    ]
+  "engines": {
+    "node": "22.12.0"
   },
-  "private": true,
   "dependencies": {
-    "@angular/common": "^20.1.0",
-    "@angular/compiler": "^20.1.0",
-    "@angular/core": "^20.1.0",
-    "@angular/forms": "^20.1.0",
-    "@angular/platform-browser": "^20.1.0",
-    "@angular/router": "^20.1.0",
-    "bulma": "^1.0.4",
-    "rxjs": "~7.8.0",
-    "tslib": "^2.3.0"
+    "concurrently": "^8.2.2",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
-    "@angular/build": "^20.1.1",
-    "@angular/cli": "^20.1.1",
-    "@angular/compiler-cli": "^20.1.0",
-    "@types/jasmine": "~5.1.0",
-    "jasmine-core": "~5.8.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.2.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.8.2"
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.0"
   }
 }

@@ -1,0 +1,7 @@
+{
+  "watch": ["server", "config"],
+  "ext": "js,json",
+  "ignore": ["node_modules"],
+  "delay": "500",
+  "exec": "node -r dotenv/config index.js"
+}
